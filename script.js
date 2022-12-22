@@ -1,10 +1,9 @@
-// Get references to the #generate element
+// Assignment Code
 var generateBtn = document.querySelector("#generate");
-
 var lowercaseChar = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numberChar = "0123456789";
-var specialChar = "!@#$%^&*()_-+={}[];:'`~<,>.?/|";
+var specialChar = "!@#$%^&*()_-+={}[];:'`~<,>.?/|"
 var passwordLength;
 var uppercaseCheck;
 var numberCheck;
@@ -101,9 +100,9 @@ function determineSpecial(){
     return specialCheck;
 }
 
-//Function used to take all the input from the previous functions and generate a password using a random number generator and 
+ //Function used to take all the input from the previous functions and generate a password using a random number generator and 
  //the charAt method 
- function generatePassword(){
+function generatePassword(){
   determineLength();
   console.log(passwordLength);
   determineUppercase();
@@ -153,7 +152,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   passwordText.value = password1;
 }
-
+g
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
