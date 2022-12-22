@@ -154,9 +154,6 @@ function writePassword() {
   passwordText.value = password1;
 }
 
-// function resetText(){
-//   document.getElementById("password").value = "Your Secure Password";
-// }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
