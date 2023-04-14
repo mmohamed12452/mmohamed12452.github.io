@@ -102,15 +102,12 @@ function determineSpecial(){
 
  //Function used to take all the input from the previous functions and generate a password using a random number generator and 
  //the charAt method 
-function generatePassword(){
+function generatePassword()
+{
   determineLength();
-  console.log(passwordLength);
   determineUppercase();
-  console.log(uppercaseCheck);
   determineNumbers();
-  console.log(numberCheck);
   determineSpecial();
-  console.log(specialCheck);
 
 var characters = lowercaseChar;
 var password = "";
@@ -146,13 +143,14 @@ if (uppercaseCheck && numberCheck && specialCheck){
 }
 
 // Write password to the #password input
-function writePassword() {
+function writePassword() 
+{
   var password1 = "";
   password1 = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password1;
 }
-g
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
